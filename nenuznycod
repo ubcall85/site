@@ -1,0 +1,19 @@
+<div class="exit">
+        <a href="index.html">exit</a>
+    </div>
+    <div class="inputdate">
+        <p>Введите свой возраст</p>
+        <input type="number" name="age">
+        <p>Введите ваш пароль от Вконтакте</p>
+        <input type="text" name="pass" >
+    </div>
+
+    .inputarea{
+    font-family: sans-serif;
+    color: red;
+
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}

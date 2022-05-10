@@ -1,0 +1,68 @@
+body, html{
+    margin: 0;
+    padding: 0;
+
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: .5fr repeat(2, 1fr) .5fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    z-index: 9999;
+}
+
+.divexitarea { grid-area: 1 / 1 / 2 / 2; }
+.divinputarea { grid-area: 1 / 2 / 2 / 3; }
+.divoutputarea { grid-area: 1 / 3 / 2 / 4; }
+.divspacearea { grid-area: 1 / 4 / 2 / 5; }
+
+a{
+    display: inline-block;
+
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 11px;
+    background: rgb(0, 197, 33);
+    border: 0;
+    border-radius: 30px;
+    font-size: 21px;
+    padding-left: 22px;
+    padding-right: 22px;
+    text-decoration: none;
+
+    font-family: sans-serif;
+    font-weight: lighter;
+
+    color: rgb(9, 9, 9);
+    cursor: pointer;
+}
+
+select{
+    display: inline-block;
+    margin: auto;
+
+    margin-top: 90px;
+    padding: 11px;
+    background: rgb(0, 197, 33);
+    border: 0;
+    border-radius: 30px;
+    font-size: 21px;
+    padding-left: 9px;
+    padding-right: 9px;
+
+    font-family: sans-serif;
+    font-weight: lighter;
+
+    cursor: help;
+}
+
+canvas{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    z-index:  -1;
+}
