@@ -54,6 +54,9 @@ setInterval( update_heap, 10 );
 const d_dist = (x, y, x1, y1) => Math.sqrt( (x1 - x)**2 + (y1 - y)**2 );
 
 const frame_Descriptor = ( ) => {
+	canvas.width	= window.innerWidth;
+	canvas.height	= window.innerHeight;
+
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
 	ctx.fillStyle = "black";
 	ctx.fillRect(0, 0, canvas.width, canvas.height);
