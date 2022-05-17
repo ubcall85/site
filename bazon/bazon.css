@@ -1,9 +1,3 @@
-body, html{
-    margin: 0;
-    padding: 0;
-
-}
-
 .wrapper{
     display: grid;
     grid-template-columns: 0.5fr 1fr 0.5fr;
@@ -12,46 +6,13 @@ body, html{
     grid-row-gap: 0px;
 }
 
-.header{
-    display: block;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    height: 42px;
-    background: rgba(0, 0, 0, 0.5);
-}
-
-a {
-    color: rgb(198, 198, 198);
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    font-weight: lighter;
-
-    font-size: 17px;
-    line-height: 42px;
-
-    margin-right: 13px;
-
-    
-}
-
-a:hover {
-    color: rgb(255, 255, 255)
-}
-
 .inputarea {
     display: block;
-
     margin-top: 56px;
-
     position:  relative;
     z-index: 1;
-
     font-family: sans-serif;
-}
 
-div {
     color: white;
 }
 
@@ -92,5 +53,3 @@ button#konechnoe{
     z-index: 9999;
     
 }
-
-
