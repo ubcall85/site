@@ -12,27 +12,32 @@ body, html{
     grid-row-gap: 0px;
 }
 
-a{
-    display: inline-block;
+.header{
+    display: block;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 42px;
+    background: rgba(0, 0, 0, 0.5);
+}
 
-    margin-top: 10px;
-    margin-left: 10px;
-    padding: 11px;
-    background: rgb(0, 197, 33);
-    border: 0;
-    border-radius: 30px;
-    font-size: 21px;
-    padding-left: 22px;
-    padding-right: 22px;
+a {
+    color: rgb(198, 198, 198);
     text-decoration: none;
-
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: lighter;
 
-    color: rgb(9, 9, 9);
-    cursor: pointer;
+    font-size: 17px;
+    line-height: 42px;
 
-     z-index: 9999;
+    margin-right: 13px;
+
+    
+}
+
+a:hover {
+    color: rgb(255, 255, 255)
 }
 
 .inputarea {

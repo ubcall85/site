@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(25, 25, 25);
+}
+
+
+button {
+    display: block;
+    margin: auto;
+
+    margin-top: 16px;
+    padding: 11px;
+    background: rgb(0, 197, 33);
+    border: 0;
+    border-radius: 30px;
+    font-size: 21px;
+    padding-left: 22px;
+    padding-right: 22px;
+
+    font-family: sans-serif;
+    font-weight: lighter;
+
+    color: rgb(9, 9, 9);
+    cursor: pointer;
+}
