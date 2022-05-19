@@ -7,7 +7,7 @@ const huy = document.querySelector('button#konechnoe');
 huy.onclick = () => { if (user.indexOf('Mac') !== -1){
     alert('Твоя мать шлюха. Я сам проверял.')
 }else {
-    alert('Твой отце не твой отце, ты приемный.')
+    alert('Твой отце не твой отец, ты приемный.')
 }
 };
 
