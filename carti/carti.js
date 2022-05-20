@@ -7,8 +7,8 @@
 }
 */
 
-const amount = document.querySelector('#cifra');
-const col = amount;
+const amount = document.querySelector('input#cifra');
+
 
 function getRandomCard (min, max) {  
     return  Math.floor(Math.random() * (max - min + 1)) + min;
@@ -18,15 +18,15 @@ function vizov() {
     const IMG = document.createElement('img');
     let source = `../carti/taro/${getRandomCard(1, 78)}.jpg`;
     IMG.src = source;
-/*    if (document.querySelector('img') != source){
-        document.querySelector('.vivodCart').appendChild(IMG);
-    } else{ vizov()}
-*/
     document.querySelector('.vivodCart').appendChild(IMG);
 }   
 
 function vivod(){
-    for(let i = 0; col != i;i++){
+    for(let i = 0;amount.value != i;i++){
         vizov()
     }
+}
+
+function clear(){
+    document.querySelector('.vivodCart').remove('img');
 }
