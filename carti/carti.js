@@ -9,14 +9,18 @@
 
 let amount = document.querySelector('#cifra');
 
-function getRandomCard (min, max) {
-
-    return Math.random() * (max - min) + min;
+function getRandomCard (min, max) {  
+    return  Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 function vizov() {
     const IMG = document.createElement('img');
-    let source = '../carti/taro/1.jpg';
+    let source = `../carti/taro/${getRandomCard(1, 78)}.jpg`;
     IMG.src = source;
+/*    if (document.querySelector('img') != source){
+        document.querySelector('.vivodCart').appendChild(IMG);
+    } else{ vizov()}
+*/
     document.querySelector('.vivodCart').appendChild(IMG);
-}
+}   
+
