@@ -7,7 +7,8 @@
 }
 */
 
-let amount = document.querySelector('#cifra');
+const amount = document.querySelector('#cifra');
+const col = amount;
 
 function getRandomCard (min, max) {  
     return  Math.floor(Math.random() * (max - min + 1)) + min;
@@ -24,3 +25,8 @@ function vizov() {
     document.querySelector('.vivodCart').appendChild(IMG);
 }   
 
+function vivod(){
+    for(let i = 0; col != i;i++){
+        vizov()
+    }
+}
