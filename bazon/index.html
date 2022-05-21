@@ -4,10 +4,72 @@
     <meta charset="UTF-8">
     <title>Базон</title>
 
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="bazon.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/bazon.css">
 </head>
 <body>
-    rere tgn
+    <canvas></canvas>
+    <div class="header">
+        <a href="javascript:toggle_dropdown()" class="dropdown-toggler"> <i class="fa-solid fa-bars"></i> </a>
+        <ul class="navigator">
+            <li> <a href="../index.html"> <i class="fa-solid fa-house"></i> Главная </a> </li>
+            <li> <a href="presentation"> <i class="fa-solid fa-globe"></i> План </a> </li>
+            <li> <a href="contacts"> <i class="fa-solid fa-phone"></i> Контакты </a> </li>
+            <li> <a href="bazon/index.html"> <i class="fa-solid fa-person-dots-from-line"></i> Базон </a> </li>
+            <li> <a href="cards"> <i class="fa-solid fa-hat-wizard"></i> Карты Хайро </a> </li>
+        </ul>
+    </div>
+    <div class="wrapper">
+        <div class="exitarea"></div>
+        <div class="inputarea"> 
+            <div class="bezpoleznieKnopki">
+                <div class="fruckti">
+                    <p id="question">Какой ваш любимый фрукт</p>
+                    <input type="radio" name="fruckt" id="test">Банан</input><br>
+                    <input type="radio" name="fruckt" id="test">Арбуз</input><br>
+                    <input type="radio" name="fruckt" id="test">Яблоко</input><br>
+                    <input type="radio" name="fruckt" id="test">Ананас</input><br>
+                </div>
+                <div class="ovoshi">
+                    <p id="question">Какой ваш любимый овощь</p>
+                    <input type="radio" name="ovosh" id="test">Кедр</input><br>
+                    <input type="radio" name="ovosh" id="test">Агурец</input><br>
+                    <input type="radio" name="ovosh" id="test">Помидор</input><br>
+                    <input type="radio" name="ovosh" id="test">Вы</input><br>
+                </div>
+                <div class="testik1">
+                    <p id="question">Вам трудно представить себя другми людям</p>
+                    <input type="radio" name="testik" id="test">Согласен</input><br>
+                    <input type="radio" name="testik" id="test">Практически согласен</input><br>
+                    <input type="radio" name="testik" id="test">Практически не согласен</input><br>
+                    <input type="radio" name="testik" id="test">Не согласен</input><br>
+                </div>
+                <div class="testik2">
+                    <p id="question">Вы очень часто так погружаетесь в свои мысли, что не замечаете или забываете об окружающих вас людях</p>
+                    <input type="radio" name="testik2" id="test">Согласен</input><br>
+                    <input type="radio" name="testik2" id="test">Практически согласен</input><br>
+                    <input type="radio" name="testik2" id="test">Практически не согласен</input><br>
+                    <input type="radio" name="testik2" id="test">Не согласен</input><br>
+                </div>
+            </div>
+            <button id="konechnoe">Проверить</button>
+        </div>
+    </div>
+    <script src="../scripts/screensaver.js"></script>
+    <script src="bazon.js"></script>
+    <script>
+        const nav = document.querySelector('.navigator');
+        let state = false;
+
+        function toggle_dropdown() {
+            state = !state;
+            if (state) {
+                nav.style.display = 'block';
+            } else {
+                nav.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 </html>

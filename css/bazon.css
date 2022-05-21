@@ -1,0 +1,61 @@
+.wrapper{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.inputarea {
+    display: block;
+    margin-top: 17px;
+    position:  relative;
+    z-index: 1;
+    font-family: sans-serif;
+
+    color: white;
+}
+
+p#question{
+    display: block;
+    
+    color: rgb(198, 198, 198);
+    
+    margin-top: 34px;
+    padding-top: 0;
+}
+
+input#test{
+    margin-left: 17px;
+}
+
+canvas{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    z-index:  -1;
+}
+
+button#konechnoe{
+    display: block;
+
+    color: white;
+    background: rgb(0, 100, 230);
+    border: 0;
+    border-radius: 30px;
+    font-size: 21px;
+    padding: 13px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    font-family: sans-serif;
+    font-weight: lighter;
+
+    margin-top: 56px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    z-index: 9999;
+    
+}
