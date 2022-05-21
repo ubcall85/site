@@ -23,10 +23,12 @@ function vizov() {
 
 function vivod(){
     for(let i = 0;amount.value != i;i++){
-        vizov()
+        vizov();
     }
 }
 
 function clear(){
-    document.querySelector('.vivodCart').remove('img');
+    for(let i = 0;amount.value != i;i++){
+        document.querySelector('img').remove('img');
+    }
 }
