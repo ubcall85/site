@@ -7,8 +7,11 @@
 }
 */
 
-const amount = document.querySelector('input#cifra');
+const answers = ['твоя мать шлюха', 
+                'твой отце пидорас',
+                ''];
 
+const amount = document.querySelector('input#cifra');
 
 function getRandomCard (min, max) {  
     return  Math.floor(Math.random() * (max - min + 1)) + min;
@@ -31,4 +34,8 @@ function clear(){
     for(let i = 0;amount.value != i;i++){
         document.querySelector('img').remove('img');
     }
+}
+
+function predskozanie(){
+    
 }
