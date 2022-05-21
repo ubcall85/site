@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> Dorisuteru </title>
+
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+	</head>
+	<body>
+		<div class="header">
+			<a href="javascript:toggle_dropdown()" class="dropdown-toggler"> <i class="fa-solid fa-bars"></i> </a>
+			<ul class="navigator">
+				<li> <a href="/"> <i class="fa-solid fa-house"></i> Главная </a> </li>
+				<li> <a href="/presentation"> <i class="fa-solid fa-globe"></i> План </a> </li>
+				<li> <a href="/contacts"> <i class="fa-solid fa-phone"></i> Контакты </a> </li>
+				<li> <a href="/bazon"> <i class="fa-solid fa-person-dots-from-line"></i> Базон </a> </li>
+				<li> <a href="/cards"> <i class="fa-solid fa-hat-wizard"></i> Карты Хайро </a> </li>
+			</ul>
+		</div>
+
+		<div class="jumbo">
+			<div class="abs-center">
+				<h2> <i class="fa-solid fa-globe"></i> Dorisuteru </h2>
+				<h1> Начало чего-то большего. </h1>
+
+				<h4> Предлагаем вам ознакомиться с нашим бизнес-планом. </h4>
+				<a href="/presentation">Смотреть презентацию <i class="fa-solid fa-tv"></i></a>
+			</div>
+		</div>
+
+		<div class="content">
+			<div class="tile tile1">
+				<div class="abs-center">
+					<h2 style="font-size: 2.5rem; margin: 0px;"> Каталог товаров </h2>
+					<h4 style="margin: 0px; color: white;"> Уже совсем скоро... </h4>
+				</div>
+			</div>
+			<div class="tile tile2">
+				<div class="abs-center">
+					<h2 style="font-size: 32px;"> Карты Хайро </h2>
+					<a href="/cards" style="text-shadow: 1px 1px rgba(0, 0, 0, .0); filter: brightness(1.8); font-size: 20px; font-weight: 600;"> Попробовать </a>
+				</div>
+			</div>
+		</div>
+
+		<div class="clear">
+			<div class="footer">
+				<p> В настоящее время сайт находится на стадии разработки, поэтому некоторые функции могут быть недоступны и/или не совпадать с набором актуальных заявленных функций экосистемы Dorisuteru. Благодарим Вас за понимание. </p>
+				<span> Copyright © 2022 Dorisuteru Inc. Все права защищены. </span>
+			</div>
+		</div>
+
+		<script>
+			const nav = document.querySelector('.navigator');
+			let state = false;
+
+			function toggle_dropdown() {
+				state = !state;
+				if (state) {
+					nav.style.display = 'block';
+				} else {
+					nav.style.display = 'none';
+				}
+			}
+		</script>
+	</body>
+</html>
