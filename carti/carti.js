@@ -7,10 +7,6 @@
 }
 */
 
-const answers = ['твоя мать шлюха', 
-                'твой отце пидорас',
-                ''];
-
 const amount = document.querySelector('input#cifra');
 
 function getRandomCard (min, max) {  
@@ -31,9 +27,7 @@ function vivod(){
 }
 
 function clear(){
-    for(let i = 0;amount.value != i;i++){
-        document.querySelector('img').remove('img');
-    }
+    document.querySelector('img').remove('img');
 }
 
 function predskozanie(){
