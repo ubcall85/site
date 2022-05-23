@@ -6,6 +6,11 @@
     grid-row-gap: 0px;
 }
 
+.priziv{
+    display: block;
+    position: relative;
+}
+
 input#cifra{
     display: block;
     position: absolute;
@@ -42,7 +47,28 @@ button#prizvat{
     position: absolute;
     z-index: 9999;
 
-    margin-top: 99px;
-    margin-left: 490px;
+    margin-top: 85px;
+    margin: auto;
+    margin-right: 10px;
+
+    text-decoration: none;
+    border: none;
+    outline: none;
+    background: #fff;
+
+    height: 25px;
+}
+
+@font-face {
+    font-family: "Font Awesome 6 Pro";
+    src: url("fa-thin-100.woff2") format("woff2");
+}
+
+.arrow::before {
+    content:  '\f0a9';
+    font-family:  'Font Awesome 6 Pro';
+    font-style:  normal;
+
+    font-size:  25px;
 }
 
