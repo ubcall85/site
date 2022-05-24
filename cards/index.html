@@ -2,13 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Базон</title>
-
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/cards.css">
-    <link rel="stylesheet" href="../css/alerts.css">
-    <script src="../scripts/alerts.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Карты Хайро</title>
 </head>
 <body>
     <div class="header">
@@ -18,14 +15,19 @@
             <li> <a href="presentation"> <i class="fa-solid fa-globe"></i> План </a> </li>
             <li> <a href="contacts"> <i class="fa-solid fa-phone"></i> Контакты </a> </li>
             <li> <a href="bazon/index.html"> <i class="fa-solid fa-person-dots-from-line"></i> Базон </a> </li>
-            <li> <a href="cards/index.hmtl"> <i class="fa-solid fa-hat-wizard"></i> Карты Хайро </a> </li>
+            <li> <a href="../cards/index.html"> <i class="fa-solid fa-hat-wizard"></i> Карты Хайро </a> </li>
         </ul>
     </div>
-    <div class="priziv">
-        <input type="text" id="cifra">
-        <button id="prizvat" onclick="clear(), vivod()"> ВЫВЕСТИ</button>
+    <div class="wrapper">
+        <div class="spaceArea0"></div>
+        <div class="priziv">
+            <input type="text" id="cifra" placeholder="         Введи количество карт, которое хотите вывести">
+            <button id="prizvat" onclick="clear(), vivod()"><i class="arrow"></i></button>
+        </div>
+        <div class="spaceArea1"></div>
     </div>
     <div class="vivodCart"></div>
+    <script src="carti.js"></script>
     <script>
         const nav = document.querySelector('.navigator');
         let state = false;

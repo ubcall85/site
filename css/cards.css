@@ -1,9 +1,22 @@
+.wrapper{
+    display: grid;
+    grid-template-columns: .2fr 1fr .2fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
 .priziv{
     display: block;
-    margin-top: 100px;
+    position: relative;
 }
 
 input#cifra{
+    display: block;
+    position: absolute;
+    z-index: 9999;
+    margin-top: 99px;
+
     font-size: 17px;
     line-height: 1.29412;
     font-weight: 400;
@@ -12,7 +25,7 @@ input#cifra{
     display: inline-block;
     box-sizing: border-box;
     vertical-align: top;
-    width: 100%;
+    width: 499px;
     height: 34px;
     margin-bottom: 14px;
     padding-left: 15px;
@@ -23,4 +36,39 @@ input#cifra{
     border-radius: 4px;
     background: #fff;
     background-clip: padding-box;
+
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
 }
+
+button#prizvat{
+    display: block;
+    position: absolute;
+    z-index: 9999;
+
+    margin-top: 85px;
+    margin: auto;
+    margin-right: 10px;
+
+    text-decoration: none;
+    border: none;
+    outline: none;
+    background: #fff;
+
+    height: 25px;
+}
+
+@font-face {
+    font-family: "Font Awesome 6 Pro";
+    src: url("fa-thin-100.woff2") format("woff2");
+}
+
+.arrow::before {
+    content:  '\f0a9';
+    font-family:  'Font Awesome 6 Pro';
+    font-style:  normal;
+
+    font-size:  25px;
+}
+
