@@ -1,4 +1,4 @@
-.wrapper{
+/*.wrapper{
     display: grid;
     grid-template-columns: .2fr 1fr .2fr;
     grid-template-rows: 1fr;
@@ -72,3 +72,97 @@ button#prizvat{
     font-size:  25px;
 }
 
+*/
+.wrapper{
+    display: grid;
+    grid-template-columns: .2fr 1fr .2fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    margin-top:  145px;
+}
+
+input#cifra{
+    display: inline-block;
+    position: absolute;
+    z-index: 9999;
+    margin-top: 99px;
+
+    font-size: 17px;
+    line-height: 1.29412;
+    font-weight: 400;
+    letter-spacing: -.021em;
+    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    box-sizing: border-box;
+    vertical-align: top;
+    width: 499px;
+    height: 34px;
+    margin-bottom: 14px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #333;
+    text-align: left;
+    border: 1px solid #d6d6d6;
+    border-radius: 4px;
+    background: #fff;
+    background-clip: padding-box;
+
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.input-wrapper {
+    width:  325px;
+    height:  45px;
+
+    /*background: red;*/
+    position: relative;
+}
+
+.input-wrapper input {
+    display:  block;
+    width:  calc(100% - 15px - 4px * 2);
+    height:  calc(100% - 7px * 2 - 2px);
+    padding:  7px;
+    padding-left:  15px;
+
+    border-radius:  7px;
+    border:  1px rgb(150, 150, 150) solid;
+    outline:  none;
+
+    font-size:  18px;
+}
+
+.input-wrapper .arrow {
+    display:  inline-block;
+    position: absolute; 
+    top:  50%;
+    right:  0px;
+
+    transform:  translate(0, -50%);
+    cursor:  pointer;
+    background:  white;
+    padding:  7px;
+    padding-right:  15px;
+}
+
+.input-wrapper input:focus {
+    border:  2px #0061c3 solid;
+    margin-left:  -1px;
+    margin-top:  -1px;
+}
+
+@font-face {
+    font-family: "Font Awesome 6 Pro";
+    src: url("fa-thin-100.woff2") format("woff2");
+}
+
+.arrow::before {
+    content:  '\f0a9';
+    font-family:  'Font Awesome 6 Pro';
+    font-style:  normal;
+
+    font-size:  25px;
+}
