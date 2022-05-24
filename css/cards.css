@@ -87,7 +87,7 @@ input#cifra{
     display: inline-block;
     position: absolute;
     z-index: 9999;
-    margin-top: 99px;
+    margin-top: 0px;
 
     font-size: 17px;
     line-height: 1.29412;
@@ -165,4 +165,19 @@ input#cifra{
     font-style:  normal;
 
     font-size:  25px;
+}
+
+i{
+    display: block;
+    position: absolute;
+
+    margin-top: -12px;
+    margin-left: 725px;
+
+    z-index: 9999;
+
+}
+
+button{
+    padding: 7px;
 }

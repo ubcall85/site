@@ -15,7 +15,7 @@ function getRandomCard (min, max) {
 
 function vizov() {
     const IMG = document.createElement('img');
-    let source = `../carti/taro/${getRandomCard(1, 78)}.jpg`;
+    let source = `../assets/taro/${getRandomCard(1, 78)}.jpg`;
     IMG.src = source;
     document.querySelector('.vivodCart').appendChild(IMG);
 }   
@@ -27,9 +27,17 @@ function vivod(){
 }
 
 function clear(){
-    document.querySelector('img').remove('img');
+    for(let i = 0;amount.value != i;i++){
+        document.querySelector('img').remove('img');
+    }
 }
 
 function predskozanie(){
     
+}
+
+function v(){
+    if(document.querySelector('img') == true){
+        vivod();
+    } else{clear();}
 }
