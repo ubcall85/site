@@ -35,9 +35,3 @@ function clear(){
 function predskozanie(){
     
 }
-
-function v(){
-    if(document.querySelector('img') == true){
-        vivod();
-    } else{clear();}
-}

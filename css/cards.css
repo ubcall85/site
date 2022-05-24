@@ -181,3 +181,13 @@ i{
 button{
     padding: 7px;
 }
+
+img{
+    height: 160px;
+}
+
+.vivodCart{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
