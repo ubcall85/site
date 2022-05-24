@@ -83,103 +83,75 @@ button#prizvat{
     margin-top:  145px;
 }
 
-input#cifra{
-    display: inline-block;
-    position: absolute;
-    z-index: 9999;
-    margin-top: 0px;
-
-    font-size: 17px;
-    line-height: 1.29412;
-    font-weight: 400;
-    letter-spacing: -.021em;
-    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
-    box-sizing: border-box;
-    vertical-align: top;
-    width: 499px;
-    height: 34px;
-    margin-bottom: 14px;
-    padding-left: 15px;
-    padding-right: 15px;
-    color: #333;
-    text-align: left;
-    border: 1px solid #d6d6d6;
-    border-radius: 4px;
-    background: #fff;
-    background-clip: padding-box;
-
-    left: 50%;
-    right: 50%;
-    transform: translate(-50%, -50%);
-}
-
 .input-wrapper {
-    width:  325px;
-    height:  45px;
+	width: 500px;
+	height: 40px;
 
-    /*background: red;*/
-    position: relative;
+	margin: auto;
+	margin-top: 25px;
+
+	display: block;
+	position: relative;
 }
 
 .input-wrapper input {
-    display:  block;
-    width:  calc(100% - 15px - 4px * 2);
-    height:  calc(100% - 7px * 2 - 2px);
-    padding:  7px;
-    padding-left:  15px;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
 
-    border-radius:  7px;
-    border:  1px rgb(150, 150, 150) solid;
-    outline:  none;
+	border: none;
+	padding: 12px;
+	outline: none;
 
-    font-size:  18px;
-}
+	border-radius: 5px;
+	background: rgb(50, 50, 50);
+	color: rgb(200, 200, 200);
 
-.input-wrapper .arrow {
-    display:  inline-block;
-    position: absolute; 
-    top:  50%;
-    right:  0px;
+	font-size: 17px;
+	/* font-family: monospace; */
 
-    transform:  translate(0, -50%);
-    cursor:  pointer;
-    background:  white;
-    padding:  7px;
-    padding-right:  15px;
+	/* letter-spacing: 1px; */
 }
 
 .input-wrapper input:focus {
-    border:  2px #0061c3 solid;
-    margin-left:  -1px;
-    margin-top:  -1px;
+	outline: 2px rgb(0, 125, 255) solid;
+}
+
+.arrow {
+	font-style: normal;
 }
 
 @font-face {
-    font-family: "Font Awesome 6 Pro";
-    src: url("fa-thin-100.woff2") format("woff2");
+	font-family: "Font Awesome 6 Pro";
+	src: url("fa-thin-100.woff2") format("woff2");
 }
 
 .arrow::before {
-    content:  '\f0a9';
-    font-family:  'Font Awesome 6 Pro';
-    font-style:  normal;
+	content:  '\f0a9';
+	font-family:  'Font Awesome 6 Pro';
 
-    font-size:  25px;
+	color: white;
+
+	position: absolute;
+	top: 50%;
+	right: 10px;
+
+	transform: translate(0, -50%);
+
+	display: inline-block;
+
+	aspect-ratio: 1 / 1;
+	text-align: center;
+	vertical-align: center;
+
+	font-size: 29px;
+	padding: 5px;
+	background: rgb(50, 50, 50);
+	cursor: pointer;
 }
 
-i{
-    display: block;
-    position: absolute;
-
-    margin-top: -12px;
-    margin-left: 725px;
-
-    z-index: 9999;
-
-}
-
-button{
-    padding: 7px;
+.arrow:hover::before {
+	color: rgb(230, 230, 230);
 }
 
 img{
