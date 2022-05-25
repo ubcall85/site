@@ -8,6 +8,7 @@
 */
 
 const amount = document.querySelector('input#cifra');
+const a = amount.value;
 
 function getRandomCard (min, max) {  
     return  Math.floor(Math.random() * (max - min + 1)) + min;
@@ -21,8 +22,12 @@ function vizov() {
 }   
 
 function vivod(){
-    for(let i = 0;amount.value != i;i++){
-        vizov();
+    if(amount.value > 7){
+        alert('ДУРА, СДЕЛАЙ КАРТ МЕНЬШЕ');
+    } else if(amount.value-0 == amount.value){
+        alert('ДУРА, ХУЛИ ТЫ БУКВЫ ПИШЕШЬ? ПИШИ ЦИФРЫ ОТ 1 ДО 7');
+    }else{
+        for(let i = 0;amount.value != i;i++){vizov();
     }
 }
 
@@ -30,8 +35,4 @@ function clear(){
     for(let i = 0;amount.value != i;i++){
         document.querySelector('img').remove('img');
     }
-}
-
-function predskozanie(){
-    
 }
