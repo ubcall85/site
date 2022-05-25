@@ -24,10 +24,11 @@ function vizov() {
 function vivod(){
     if(amount.value > 7){
         alert('ДУРА, СДЕЛАЙ КАРТ МЕНЬШЕ');
-    } else if(amount.value-0 == amount.value){
+    } else if(amount.value - 0 == ){
         alert('ДУРА, ХУЛИ ТЫ БУКВЫ ПИШЕШЬ? ПИШИ ЦИФРЫ ОТ 1 ДО 7');
     }else{
         for(let i = 0;amount.value != i;i++){vizov();
+        }
     }
 }
 
