@@ -80,8 +80,9 @@ function vivod(){
     }else{
         for(let i = 0;amount.value != i;i++){vizov();
         }
+        vizovButton();
     }
-    vizovButton();
+    
 }
 
 function clear(){
