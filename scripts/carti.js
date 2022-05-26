@@ -21,15 +21,38 @@ function vizov() {
     document.querySelector('.vivodCart').appendChild(IMG);
 }   
 
+function vizovButton(){
+    const br = document.createElement('br');
+    document.querySelector('.vivodCart').appendChild(br);
+    const button = document.createElement("button");
+    button.innerText = "Do Something";
+    button.onclick = function(){
+        const col = document.querySelectorAll('img');
+        for (let c of col) {
+            c.remove();
+        }
+        document.querySelector('input#cifra').value="";
+        document.querySelector('br').remove();
+        document.querySelector('button').remove();
+        alert('Введите новую цифру');
+    }
+    document.querySelector('.vivodCart').appendChild(button);
+}
+
+function is_int(v){
+    return v - 0 == v;
+}
+
 function vivod(){
-    if(amount.value > 7){
-        alert('ДУРА, СДЕЛАЙ КАРТ МЕНЬШЕ');
-    } else if(amount.value - 0 == ){
-        alert('ДУРА, ХУЛИ ТЫ БУКВЫ ПИШЕШЬ? ПИШИ ЦИФРЫ ОТ 1 ДО 7');
+    if (is_int(amount.value) == false){
+        alert('ДУРА, ХУЛИ ТЫ БУКВЫ ПИШЕШЬ? ПИШИ ЦИФРЫ ОТ 1 ДО 5');
+    }else if(amount.value > 5){
+        alert('ДУРА, СДЕЛАЙ КАРТ МЕНЬШЕ! ПИШИ ОТ 1 ДО 5');
     }else{
         for(let i = 0;amount.value != i;i++){vizov();
         }
     }
+    vizovButton();
 }
 
 function clear(){
