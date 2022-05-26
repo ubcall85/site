@@ -7,6 +7,7 @@
 }
 */
 
+const arrPredict = ['Твоя мамаша дура ебаная'];
 const amount = document.querySelector('input#cifra');
 const a = amount.value;
 
@@ -24,19 +25,22 @@ function vizov() {
 function vizovButton(){
     const br = document.createElement('br');
     document.querySelector('.vivodCart').appendChild(br);
-    const button = document.createElement("button");
-    button.innerText = "Do Something";
-    button.onclick = function(){
+    const buttonClear = document.createElement("button");
+    button.id = "clear";
+
+    buttonClear.innerText = "Do Something";
+    buttonClear.onclick = function(){
         const col = document.querySelectorAll('img');
         for (let c of col) {
             c.remove();
         }
         document.querySelector('input#cifra').value="";
         document.querySelector('br').remove();
-        document.querySelector('button').remove();
+        document.querySelector('button#clear').remove();
         alert('Введите новую цифру');
     }
-    document.querySelector('.vivodCart').appendChild(button);
+    document.querySelector('.vivodCart').appendChild(buttonClear);
+
 }
 
 function is_int(v){
@@ -59,4 +63,8 @@ function clear(){
     for(let i = 0;amount.value != i;i++){
         document.querySelector('img').remove('img');
     }
+}
+
+function prediction(){
+
 }
