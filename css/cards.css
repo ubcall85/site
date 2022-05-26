@@ -87,16 +87,38 @@ img{
 }
 
 .vivodCart{
-    background-color: red;
     display: block;
-    
+    position: absolute;
+
     text-align: center;
     justify-content: center;
 
+	top: 50%;
+	transform: translate(0, 25%);
     margin-left: -150px;
     margin-right: -150px;
 }
 
 button{
-    padding: 50px;
+    display: inline-block;
+	width: 155px;
+
+    color: white;
+    background: rgb(0, 100, 230);
+    border: 0;
+    border-radius: 30px;
+    font-size: 21px;
+    padding: 13px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    font-family: sans-serif;
+    font-weight: lighter;
+
+    margin-top: 56px;
+    margin-left: 5;
+    margin-right: 5px;
+    
+    z-index: 9999;
 }
+

@@ -7,7 +7,21 @@
 }
 */
 
-const arrPredict = ['Твоя мамаша дура ебаная'];
+const arrPredict = ['Твоя мамаша дура ебаная',
+                    'Твоя мать шлюха',
+                    'Твой отец пидорас',
+                    'Чекни мать',
+                    'Кстати, ты приемный',
+                    'Твой отец не твой отец',
+                    'Твою мамашу ебуть 10 негров',
+                    'Скоро ты сходишь в хуй',
+                    'Твоя мать прекрасная женщина', 
+                    'Твой отец транс',
+                    'В свой жизни ты будешь ебать только свою руку',
+                    'Ты долбаёб',
+                    'Скоро тебя переебут лопатой',
+                    'Вытащи мать из канавы',
+                    'Поздравляю вы гений'];
 const amount = document.querySelector('input#cifra');
 const a = amount.value;
 
@@ -25,10 +39,21 @@ function vizov() {
 function vizovButton(){
     const br = document.createElement('br');
     document.querySelector('.vivodCart').appendChild(br);
-    const buttonClear = document.createElement("button");
-    button.id = "clear";
 
-    buttonClear.innerText = "Do Something";
+    const buttonCheck = document.createElement("button");
+    buttonCheck.id = 'check';
+
+    buttonCheck.innerText = "Проверить";
+    buttonCheck.onclick = function(){
+        alert(arrPredict[Math.floor(Math.random()*arrPredict.length)]);
+    }
+
+    document.querySelector('.vivodCart').appendChild(buttonCheck);
+
+    const buttonClear = document.createElement("button");
+    buttonClear.id = 'clear';
+
+    buttonClear.innerText = "Заново";
     buttonClear.onclick = function(){
         const col = document.querySelectorAll('img');
         for (let c of col) {
@@ -36,7 +61,7 @@ function vizovButton(){
         }
         document.querySelector('input#cifra').value="";
         document.querySelector('br').remove();
-        document.querySelector('button#clear').remove();
+        document.querySelectorAll('button').remove();
         alert('Введите новую цифру');
     }
     document.querySelector('.vivodCart').appendChild(buttonClear);
