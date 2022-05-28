@@ -1,0 +1,29 @@
+.content1{
+    margin-top: 46px;
+}
+.tile3 {
+    display: block;
+    z-index: 9999;
+    
+    width: calc(100% - 50px);
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 25px;
+
+	background: linear-gradient(to right, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+}
+
+.tile4 {
+	display: block;
+    z-index: 9999;
+    
+    width: calc(100% - 50px);
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 25px;
+    
+    background-image: url(https://wallpapershome.ru/images/wallpapers/macos-big-sur-3840x2160-22654.jpg);
+	background-position:  center;
+}
