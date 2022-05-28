@@ -27,3 +27,10 @@
     background-image: url(https://wallpapershome.ru/images/wallpapers/macos-big-sur-3840x2160-22654.jpg);
 	background-position:  center;
 }
+
+img{
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
