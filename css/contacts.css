@@ -3,6 +3,8 @@
 }
 .tile3 {
     display: block;
+    grid-template-columns: 2;
+
     z-index: 9999;
     
     width: calc(100% - 50px);
@@ -33,4 +35,34 @@ img{
     margin-left: 5%;
     margin-top: 2%;
     margin-bottom: 2%;
+}
+
+/*h1{
+    display: block;
+    position: absolute;
+
+    top: 35%;
+    left: 50%;
+    right: 50%;
+    margin-right: -50%;
+
+}
+
+h3{
+    display: block;
+    position: absolute;
+
+    top: 40%;
+    left: 50%;
+    right: 50%;
+    margin-right: -50%;  
+}
+*/
+.text{
+    display: block;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    right: 50%;
+    margin-right: -50%;
 }
