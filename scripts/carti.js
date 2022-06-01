@@ -72,12 +72,21 @@ function is_int(v){
     return v - 0 == v;
 }
 
+function yes(v){
+    if (v == 1, v == 2, v == 3, v == 4, v == 5){
+        return v;
+    } else {
+        alert('idi v ochko');
+    }
+
+}
+
 function vivod(){
     if (is_int(amount.value) == false){
         alert('ДУРА, ХУЛИ ТЫ БУКВЫ ПИШЕШЬ? ПИШИ ЦИФРЫ ОТ 1 ДО 5');
-    }else if(amount.value > 5){
-        alert('ДУРА, СДЕЛАЙ КАРТ МЕНЬШЕ! ПИШИ ОТ 1 ДО 5');
-    }else{
+    }else if(0 < amount.value > 5){
+        alert('ДУРА, ПИШИ ОТ 1 ДО 5');
+    }else if (yes(amount.value)){
         for(let i = 0;amount.value != i;i++){vizov();
         }
         vizovButton();
