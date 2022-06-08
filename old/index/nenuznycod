@@ -1,19 +1,85 @@
-<div class="exit">
-        <a href="index.html">exit</a>
-    </div>
-    <div class="inputdate">
-        <p>Введите свой возраст</p>
-        <input type="number" name="age">
-        <p>Введите ваш пароль от Вконтакте</p>
-        <input type="text" name="pass" >
-    </div>
+ const thread_sleep = mseconds => new Promise( resolve => setTimeout( resolve, mseconds ) ); // Шаманский прикол, на бизнес встрече по асинхронным потокам объясню
+ button.onclick = async function() { // async обязательно для активации асинхронных потоков
+  element_outside.style.transform = 'rotateY(90deg)';
+  await thread_sleep(1000); // Заставляет поток затормозить на 1 секунду (1000 милисекунд), await обязательно
+  element_inside.style.transform = 'rotate(180deg)'; // Изначально у него rotate(90deg);
+}
 
-    .inputarea{
-    font-family: sans-serif;
-    color: red;
+function getRandomCard (min, max) {  
+    return  Math.floor(Math.random() * (max - min + 1)) + min;
+}
 
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
+function vizov() {
+    const IMG = document.createElement('img');
+    let source = `../assets/taro/${getRandomCard(1, 78)}.jpg`;
+    IMG.src = source;
+    document.querySelector('.vivodCart').appendChild(IMG);
+}   
+
+function vizovButton(){
+    const br = document.createElement('br');
+    document.querySelector('.vivodCart').appendChild(br);
+
+    const buttonCheck = document.createElement("button");
+    buttonCheck.id = 'check';
+
+    buttonCheck.innerText = "Проверить";
+    buttonCheck.onclick = function(){
+        alert(arrPredict[Math.floor(Math.random()*arrPredict.length)]);
+    }
+
+    document.querySelector('.vivodCart').appendChild(buttonCheck);
+
+    const buttonClear = document.createElement("button");
+    buttonClear.id = 'clear';
+
+    buttonClear.innerText = "Заново";
+    buttonClear.onclick = function(){
+        const col = document.querySelectorAll('img');
+        for (let c of col) {
+            c.remove();
+        }
+        document.querySelector('input#cifra').value="";
+        document.querySelector('br').remove();
+        document.querySelectorAll('button').remove();
+        alert('Введите новую цифру');
+    }
+    document.querySelector('.vivodCart').appendChild(buttonClear);
+
+}
+
+function is_int(v){
+    return v - 0 == v;
+}
+
+function yes(v){
+    if (v == 1, v == 2, v == 3, v == 4, v == 5){
+        return v;
+    } else {
+        alert('idi v ochko');
+    }
+
+}
+
+function vivod(){
+    if (is_int(amount.value) == false){
+        alert('ДУРА, ХУЛИ ТЫ БУКВЫ ПИШЕШЬ? ПИШИ ЦИФРЫ ОТ 1 ДО 5');
+    }else if(0 < amount.value > 5){
+        alert('ДУРА, ПИШИ ОТ 1 ДО 5');
+    }else if (yes(amount.value)){
+        for(let i = 0;amount.value != i;i++){vizov();
+        }
+        vizovButton();
+    }
+    
+}
+
+function clear(){
+    for(let i = 0;amount.value != i;i++){
+        document.querySelector('img').remove('img');
+    }
+}
+
+function prediction(){
+
 }

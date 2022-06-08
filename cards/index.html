@@ -24,13 +24,12 @@
     <div class="wrapper">
         <div class="spaceArea"></div>
         <div class="input-wrapper">
-            <input type="text" id="cifra" placeholder="Введите количество карт, которое хотите вывести">
-            <i class="arrow" onclick="vivod()"> </i>
-            <div class="vivodCart"></div>
+            <input type="tel" id="cifra" placeholder="Введите количество карт, которое хотите вывести">
+            <i class="arrow" onclick="displayCard()"> </i>
+            <div class="cardPlace"></div>
         </div>
         <div class="spaceArea"></div>
     </div>
-    <script src="carti.js"></script>
     <script>
         const nav = document.querySelector('.navigator');
         let state = false;
