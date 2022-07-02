@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/anime.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="../fluent-alerts/alerts.css">		<script src="fluent-alerts/alerts.js"></script>
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <title>ANIME</title>
+</head>
+<body>
+    <div class="header">
+        <a href="javascript:toggle_dropdown()" class="dropdown-toggler"> <i class="fa-solid fa-bars"></i> </a>
+        <ul class="navigator">
+            <li> <a href="../index.html"> <i class="fa-solid fa-house"></i> Главная </a> </li>
+            <li> <a href="../presentation"> <i class="fa-solid fa-globe"></i> План </a> </li>
+            <li> <a href="../contacts/index.html"> <i class="fa-solid fa-phone"></i> Контакты </a> </li>
+            <li> <a href="../bazon/index.html"> <i class="fa-solid fa-person-dots-from-line"></i> Базон </a> </li>
+            <li> <a href="../cards/index.html"> <i class="fa-solid fa-hat-wizard"></i> Карты Хайро </a> </li>
+        </ul>
+    </div>
+    <section class="tv">
+        <div class="pleer">
+                <video id="televisor" src="#" controls></video>
+        </div>
+        <div class="viborserii">
+            <ul class="chapters">
+                <li>1 серия</li>
+                <li>2 серия</li>
+                <li>3 серия</li>
+                <li>4 серия</li>
+                <li>5 серия</li>
+                <li>6 серия</li>
+                <li>7 серия</li>
+                <li>8 серия</li>
+                <li>9 серия</li>
+                <li>10 серия</li>
+                <li>11 серия</li>
+                <li>12 серия</li>
+                <li>13 серия</li>
+            </ul>
+        </div>
+    </section>
+    <script>
+        const nav = document.querySelector('.navigator');
+        let state = false;
+
+        function toggle_dropdown() {
+            state = !state;
+            if (state) {
+                nav.style.display = 'block';
+            } else {
+                nav.style.display = 'none';
+            }
+        }
+    </script>    
+</body>
+</html>

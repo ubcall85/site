@@ -1,0 +1,25 @@
+.tv{
+    position: relative;
+}
+
+.pleer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.pleer video{
+    max-width: 600px;   
+}
+
+.viborserii{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.viborserii ul, li{
+    display: inline;
+}
