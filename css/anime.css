@@ -1,3 +1,9 @@
+:root{
+    font-family: sans-serif;
+    font-weight: lighter;
+}   
+
+
 .tv{
     position: relative;
 }
@@ -20,6 +26,25 @@
     margin-top: 50px;
 }
 
-.viborserii ul, li{
-    display: inline;
+.viborserii ul > li{
+    display: inline-block;
+
+    color: white;
+    background: rgb(0, 100, 230);
+    border: 0;
+    border-radius: 30px;
+    font-size: 21px;
+    padding: 13px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    font-family: sans-serif;
+    font-weight: lighter;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title h3{
+    color: rgb(0, 100, 230);
 }
