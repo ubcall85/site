@@ -12,7 +12,7 @@
     <title>ANIME</title>
 </head>
 <body>
-    <div class="header">
+    <div class="header dark-mode">
         <a href="javascript:toggle_dropdown()" class="dropdown-toggler"> <i class="fa-solid fa-bars"></i> </a>
         <ul class="navigator">
             <li> <a href="../index.html"> <i class="fa-solid fa-house"></i> Главная </a> </li>
@@ -22,31 +22,56 @@
             <li> <a href="../cards/index.html"> <i class="fa-solid fa-hat-wizard"></i> Карты Хайро </a> </li>
         </ul>
     </div>
+    <div class="titleName">
+        <h1>Fate/Stay Night: Unlimited Blade Works</h1>
+    </div>
     <section class="tv">
         <div class="pleer">
-                <video id="televisor" src="#" controls></video>
+                <video id="oko" src="#" controls></video>
         </div>
-        <div class="title">
+    </section>
+    <div class="spisok">
+        <div class="title first">
             <h3>1 Сезон</h3>
         </div>
         <div class="viborserii">
             <ul class="chapters">
-                <li>1 серия</li>
-                <li>2 серия</li>
-                <li>3 серия</li>
-                <li>4 серия</li>
-                <li>5 серия</li>
-                <li>6 серия</li>
-                <li>7 серия</li>
-                <li>8 серия</li>
-                <li>9 серия</li>
-                <li>10 серия</li>
-                <li>11 серия</li>
-                <li>12 серия</li>
-                <li>13 серия</li>
+                <li onclick="changeVideo(`https://r350202.kujo-jotaro.com/fate-stay-night/1/1.1080.2ffcabd9810088d2.mp4?hash1=57cd54481f96bb0b69406c6ba13edce5&hash2=4b5f38081e9448a534ce4fa06b30990c`)">1 серия</li>
+                <li onclick="changeVideo(`https://r350202.kujo-jotaro.com/fate-stay-night/1/2.1080.480e29510fefb2ce.mp4?hash1=1a7e33ca78b39f7ed743b0ff85371f88&hash2=c8bdcb23db143c266ec10179e3f9d8b0`)">2 серия</li>
+                <li onclick="changeVideo(``)">3 серия</li>
+                <li onclick="changeVideo(``)">4 серия</li>
+                <li onclick="changeVideo(``)">5 серия</li>
+                <li onclick="changeVideo(``)">6 серия</li>
+                <li onclick="changeVideo(``)">7 серия</li>
+                <li onclick="changeVideo(``)">8 серия</li>
+                <li onclick="changeVideo(``)">9 серия</li>
+                <li onclick="changeVideo(``)">10 серия</li>
+                <li onclick="changeVideo(``)">11 серия</li>
+                <li onclick="changeVideo(``)">12 серия</li>
+                <li onclick="changeVideo(``)">13 серия</li>
             </ul>
         </div>
-    </section>
+        <div class="title Second">
+            <h3>2 Сезон</h3>
+        </div>
+        <div class="viborserii">
+            <ul class="chapters">
+                <li onclick="changeVideo(``)">1 серия</li>
+                <li onclick="changeVideo(``)">2 серия</li>
+                <li onclick="changeVideo(``)">3 серия</li>
+                <li onclick="changeVideo(``)">4 серия</li>
+                <li onclick="changeVideo(``)">5 серия</li>
+                <li onclick="changeVideo(``)">6 серия</li>
+                <li onclick="changeVideo(``)">7 серия</li>
+                <li onclick="changeVideo(``)">8 серия</li>
+                <li onclick="changeVideo(``)">9 серия</li>
+                <li onclick="changeVideo(``)">10 серия</li>
+                <li onclick="changeVideo(``)">11 серия</li>
+                <li onclick="changeVideo(``)">12 серия</li>
+                <li onclick="changeVideo(``)">13 серия</li>
+            </ul>
+        </div>
+    </div>
     <script>
         const nav = document.querySelector('.navigator');
         let state = false;
@@ -58,6 +83,11 @@
             } else {
                 nav.style.display = 'none';
             }
+        }
+
+        function changeVideo(url){
+            let source = document.querySelector('#oko');
+            source.src = url;
         }
     </script>    
 </body>
