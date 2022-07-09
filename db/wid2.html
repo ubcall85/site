@@ -35,14 +35,14 @@
 						</thead>
 						<tbody class="viewform-tbody">
 							
-						<tr><td>1</td><td>Крестелев Анатолий Иванович</td></tr></tbody>
+						
 					</table>
 				</div>
 			</div>
 		</div>
 
-		<script src="./wid2_files/util.js.Без названия"> </script>
-		<script src="./wid2_files/form.js.Без названия"> </script>
+		<script src="util.js"> </script>
+		<!-- <script src="./wid2_files/form.js"> </script> -->
 
 		<script>
 			function create_tr( usr ) {
@@ -66,13 +66,13 @@
 				return e;
 			}
 
-			document.body.onload = async function() {
-				let users = await get_all_in_category();
-				for ( let user of  users ) {
-					let tr = create_tr( user );
-					document.querySelector('.viewform-tbody').appendChild(tr);
-				}
-			}
+			// document.body.onload = async function() {
+				// let users = await get_all_in_category();
+				// for ( let user of  users ) {
+					// let tr = create_tr( user );
+					// document.querySelector('.viewform-tbody').appendChild(tr);
+				// }
+			// }
 		</script>
 	
 </body></html>
