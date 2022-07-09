@@ -1,0 +1,91 @@
+:root{
+    font-family: sans-serif;
+    font-weight: lighter;
+
+    --text-color:  #dcdcdc;
+	--text-color-selection:  #f0f0f0;
+
+	--hyperlink-color:  #0377fc;
+
+	--background-black: #0D1117;
+    --header-black: #161B22;
+}   
+
+body, html{
+    background: var(--background-black);
+}
+
+.titleName{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+    margin-top: 56px;
+
+    color: var(--text-color);
+}
+
+.tv{
+    position: relative;
+}
+
+.pleer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.pleer video{
+    width: 900px;   
+}
+
+.viborserii{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+    margin-top: 10px;
+    
+    width: 670px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.viborserii ul > li{
+    display: inline-block;
+
+    color: var(--text-color);
+    background: var(--hyperlink-color);
+    border: 0;
+    border-radius: 30px;
+    font-size: 18px;
+    padding: 9px;
+    padding-left: 22px;
+    padding-right: 22px;
+
+    font-family: sans-serif;
+    font-weight: lighter;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.viborserii ul > li:hover{
+    color: black;
+    background: rgb(224, 207, 19);
+}
+
+.title{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+    margin-top: 20px;
+}
+
+.title h3{
+    color: var(--text-color);
+}

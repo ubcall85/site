@@ -11,10 +11,13 @@ body {
 	--text-color-selection:  rgb(240, 240, 240);
 
 	--hyperlink-color:  #0377fc;
+
+	--background-black: #0D1117;
+    --header-black: #161B22;
 }
 
 div.header {
-	background:  rgba(0, 0, 0, .8);
+	background:  var(--header-black);
 	backdrop-filter:  blur(15px);
 }
 
