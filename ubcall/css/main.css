@@ -1,0 +1,30 @@
+body, html{
+    /* background: url(../assets/desktop.png); */
+    background: black;
+    margin: 0;
+}
+
+.content{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    backdrop-filter: blur(-1px);
+}
+
+.link{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.link > a{
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 30%;
+}
